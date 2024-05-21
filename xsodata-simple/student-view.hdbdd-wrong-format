@@ -1,0 +1,13 @@
+namespace "np";
+
+@Schema: 'SAMPLES_XSODATA_SIMPLE'
+context studentContext {
+    @Catalog.tableType: #COLUMN
+
+    view studentView as select from xsodata-simple::student {
+		"ID",
+		"FirstName",
+		"LastName"
+	};
+
+};
