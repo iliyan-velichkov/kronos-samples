@@ -1,6 +1,6 @@
 service namespace "np" {
 	
-"xsodata-simple::student" as "Students" with ("ID", "FirstName","LastName")
+"SAMPLES_XSODATA_SIMPLE"."xsodata-simple::student" as "Students" with ("ID", "FirstName","LastName")
 	create events (before "xsodata-simple.xsjs:student.xsjslib::logCreateConfigAfter");
 
 }
