@@ -1,8 +1,0 @@
-{
-    "xsodata-simple::students-view": {
-        "target": {
-            "object": "xsodata-simple::students-view",
-            "schema": "SAMPLES_XSODATA_SIMPLE"
-        }
-    }
-}
