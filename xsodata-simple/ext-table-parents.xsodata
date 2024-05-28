@@ -1,6 +1,6 @@
 service namespace "np" {
 	
-"SAMPLES_XSODATA_SIMPLE"."xsodata-simple::students-view" as "StudentsView" with ("ID", "FirstName")
+"SAMPLES_XSODATA_SIMPLE"."PARENTS" as "Parents" with ("ID", "FIRSTNAME", "LASTNAME")
 	create events (before "xsodata-simple.xsjs:student.xsjslib::logCreateConfigAfter");
 
 }
@@ -14,3 +14,4 @@ settings {
      content cache-control "no-store";
      metadata cache-control "no-cache,no-store,max-age=86401,must-revalidate";
 }
+

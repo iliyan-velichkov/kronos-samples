@@ -1,0 +1,2 @@
+schema="SAMPLES_XSODATA_SIMPLE";
+query="SELECT \"ID\" as ID, \"FirstName\" as FirstName FROM \"SAMPLES_XSODATA_SIMPLE\".\"xsodata-simple::teachers\"";

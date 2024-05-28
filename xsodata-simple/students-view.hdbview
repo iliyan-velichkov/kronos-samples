@@ -1,2 +1,0 @@
-schema="SAMPLES_XSODATA_SIMPLE";
-query="SELECT \"ID\", \"FirstName\" FROM \"SAMPLES_XSODATA_SIMPLE\".\"xsodata-simple::student\"";
