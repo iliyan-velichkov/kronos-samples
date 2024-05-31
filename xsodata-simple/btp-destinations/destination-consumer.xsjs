@@ -1,13 +1,16 @@
 import { response } from "sdk/http";
 
-response.println("-------------------------!");
-response.println("Getting destination...");
-var destination = $.net.http.readDestination("not.used.at.all", "bigdatacloud");
-response.flush();
-response.println("-------------------------!");
+function printLineDelimiter() {
+    response.println("--------------------------");
+}
 
-response.println("Loaded destination: " + JSON.stringify(destination));
-response.println("-------------------------!");
+printLineDelimiter();
+response.println("Getting destination...");
+
+var destination = $.net.http.readDestination("not.used.at.all", "bigdatacloud");
+
+response.println("Loaded destination:\n" + JSON.stringify(destination));
+printLineDelimiter();
 response.println("Sending request...");
 
 var client = new $.net.http.Client();
@@ -20,9 +23,9 @@ response.println("Received response status code: " + apiResponse.status);
 response.println("Received response body:\n" + apiResponse.body.asString());
 response.println("Full response: \n" + JSON.stringify(apiResponse));
 
-response.println("-------------------------!");
+printLineDelimiter();
 response.println("Done!");
-
+printLineDelimiter();
 
 response.flush();
 response.close();
