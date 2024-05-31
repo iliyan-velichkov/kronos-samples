@@ -1,0 +1,7 @@
+Name=bigdatacloud
+URL=https\://api.bigdatacloud.net
+ProxyType=Internet
+Type=HTTP
+Authentication=NoAuthentication
+Description=bigdatacloud destination
+# sample API: https://api.bigdatacloud.net/data/client-ip
